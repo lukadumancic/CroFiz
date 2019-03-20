@@ -1,0 +1,8 @@
+Ime:Elongacija toèke vala
+Tekst:Odredite elongaciju toèke udaljene 3/8 valne duljine od izvora u trenutku kad je proteklo pola perioda. Amplituda vala je 2 cm.
+Rjesenje:1,41
+Jedinica:cm
+Podrucje:Valovi
+Br:1
+Slika:0
+Dan:Petak

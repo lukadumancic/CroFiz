@@ -1,0 +1,8 @@
+Ime:Poveæanje temperature èavla
+Tekst:Prilikom zabijanja èavla èekiæem u dasku, èavlu se poveæava temperatura. Pretpostavite da se 40 % kinetièke energije koju èavliæ primi udaranjem èekiæa pretvori u toplinu koja se zadrži u èavlu (nema izmjene topline s okolinom). Izraèunajte za koliko se poveæa temperatura aluminijskog èavla nakon deset udaraca èekiæem. Masa èavla je 8 g, masa èekiæa je 1.8 kg. Brzina kojom èekiæ udara èavao je 7.8 m/s. Specifièni toplinski kapacitet aluminija je 910 J/(kgK). ( rješenje je prirodan broj)
+Rjesenje:30
+Jedinica:stupnjevi
+Podrucje:Toplina
+Br:2
+Slika:0
+Dan:Nedjelja
