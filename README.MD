@@ -1,5 +1,5 @@
 # CROFIZ
-This was my first web based project made in 2016. for high school competition in Croatia called Infokup 
+This was my first web based project started in 2015. for high school competition in Croatia called Infokup 
 [Link to Infokup page of this project](https://informatika.azoo.hr/projekt/389/CroFiz)
 <br>
 [How did project look?](https://drive.google.com/open?id=0B89nzkfD9yGPY1lPWmpXNl80Tjg)
