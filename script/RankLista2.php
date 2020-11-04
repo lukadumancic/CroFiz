@@ -12,8 +12,8 @@
 		if(isset($_POST["nickPrijava"]) && isset($_POST["passPrijava"])){
 
 		//Postavljanje varijabli za spajanje na bazu
-		$servername = "82.132.7.168";
-		$username = "admin";
+		$servername = "35.238.67.22";
+		$username = "root";
 		$password = "124578";
 		$dbname = "crofiz";
 
@@ -140,8 +140,8 @@
 				return $dateArray[2]."-".$dateArray[1]."-".$dateArray[0]." ".$timeArray[0];
 			}
 			function ranking($razred){
-				$servername = "82.132.7.168";
-					$username = "admin";
+				$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname2 = "crofiz";
 
@@ -171,8 +171,8 @@
 			}
 			function infoKorisnik($id){
 				//Postavljanje varijabli za spajanje na bazu
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 

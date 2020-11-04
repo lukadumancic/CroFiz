@@ -92,8 +92,8 @@
 				return $dateArray[2]."-".$dateArray[1]."-".$dateArray[0]." ".$timeArray[0];
 			}
 			function imeZadatka(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -111,8 +111,8 @@
 				
 			}
 			function zadatak(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -138,8 +138,8 @@
 			}
 
 			function getId($nick){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -156,8 +156,8 @@
 				return $row["id"];
 			}
 			function zadatakDana(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -189,8 +189,8 @@
 				}
 			}
 			function tjedniIzazov(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -222,8 +222,8 @@
 				}
 			}
 			function dohvatiPosljednjiPokusaj(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 						
@@ -249,8 +249,8 @@
 				$conn->close();
 			}
 			function unosPokusaja(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 						

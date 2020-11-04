@@ -2,7 +2,7 @@
 	//Pokretanje sessiona
 	session_start();
 	//Ako nisu postavljene session varijable tada ih treba postaviti
-	if(!isset($_SESSION["host"])){$_SESSION["host"]="82.132.7.168";}
+	if(!isset($_SESSION["host"])){$_SESSION["host"]="35.238.67.22";}
 	if(!isset($_SESSION["korisnickoIme"])){$_SESSION["korisnickoIme"]="*%test%*";}
 	if(!isset($_SESSION["zaporka"])){$_SESSION["zaporka"]="*%test%*";}
 	if(prijavljen()=="True"){

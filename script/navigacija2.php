@@ -185,8 +185,8 @@
 		<?php
 			function imena(){
 				if(prijavljen()=="True"){
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname = "crofiz";
 
@@ -207,8 +207,8 @@
 			}
 			function imena2(){
 				if(prijavljen()=="True"){
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname = "crofiz";
 
@@ -227,8 +227,8 @@
 			}
 			function mojaSlika(){
 				if(prijavljen()=="True"){
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname = "crofiz";
 
@@ -246,8 +246,8 @@
 			}
 			function brojObavijesti(){
 				if(prijavljen()=="True"){
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname = "crofiz";
 
@@ -267,8 +267,8 @@
 			}
 			function brojPoruka(){
 				if(prijavljen()=="True"){
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname = "crofiz";
 
@@ -287,8 +287,8 @@
 				}
 			}
 			function level1(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -312,8 +312,8 @@
 				$conn->close();
 			}
 			function level2(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -337,8 +337,8 @@
 				$conn->close();
 			}
 			function postotak(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -362,8 +362,8 @@
 				$conn->close();
 			}
 			function prelazakLevela1($xpPlus){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -391,8 +391,8 @@
 			}
 			
 			function dodajXp($xp){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -406,8 +406,8 @@
 				$conn->close();
 			}
 			function prelazakLevela2($xpPlus,$id){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -433,8 +433,8 @@
 				}
 			}
 			function dodajXp2($xp,$id){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -446,8 +446,8 @@
 				$conn->close();
 			}
 			function obavijesti($id,$tekst){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 

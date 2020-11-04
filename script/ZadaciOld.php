@@ -231,8 +231,8 @@
 			function ispisiDnevni(){
 				if(prijavljen()=="True"){
 					$id=getId($_SESSION["korisnickoIme"]);
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname2 = "crofiz";
 
@@ -265,8 +265,8 @@
 			function ispisiTjedni(){
 				if(prijavljen()=="True"){
 					$id=getId($_SESSION["korisnickoIme"]);
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname2 = "crofiz";
 
@@ -298,8 +298,8 @@
 			}
 			function ispisiSveDnevne(){
 					$id=getId($_SESSION["korisnickoIme"]);
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname2 = "crofiz";
 
@@ -327,8 +327,8 @@
 				}
 			function ispisiSveTjedne(){
 					$id=getId($_SESSION["korisnickoIme"]);
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname2 = "crofiz";
 
@@ -357,8 +357,8 @@
 			function ispisiTjedan(){
 				if(prijavljen()=="True"){
 					$id=getId($_SESSION["korisnickoIme"]);
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname2 = "crofiz";
 
@@ -392,8 +392,8 @@
 				}
 			}
 			function getId($nick){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -410,8 +410,8 @@
 				return $row["id"];
 			}
 			function profesor(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -434,8 +434,8 @@
 				}
 			}
 			function dohvatiGrupe(){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -464,8 +464,8 @@
 			}
 			function ispisMentorskih(){
 				if(prijavljen()=="True"){
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname = "crofiz";
 
@@ -562,8 +562,8 @@
 			}
 			function dohvatiSveZadatke($razred,$podrucje){
 				$id=getId($_SESSION["korisnickoIme"]);
-					$servername = "82.132.7.168";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname2 = "crofiz";
 
@@ -584,8 +584,8 @@
 						return $ret;
 			}
 			function dohvatiPodrucja($razred){
-				$servername = "82.132.7.168";
-					$username = "admin";
+				$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname2 = "crofiz";
 
@@ -613,8 +613,8 @@
 					}
 			}
 			function unesiArhivu($razred,$podrucje){
-				$servername = "82.132.7.168";
-					$username = "admin";
+				$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname2 = "crofiz";
 					

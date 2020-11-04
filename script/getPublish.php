@@ -1,6 +1,6 @@
 <?php
-	$servername = "82.132.7.168";
-				$username = "admin";
+	$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -41,8 +41,8 @@
 				$conn->close();
 				
 				function getInfo($id){
-				$servername = "82.132.7.168";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 

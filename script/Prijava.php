@@ -4,8 +4,8 @@
 				if(isset($_POST["userOrPass"])){
 					if($_POST["userOrPass"]!==""){
 						//Postavljanje varijabli za spajanje na bazu
-						$servername = "hugeiceberg.ddns.net";
-						$username = "admin";
+						$servername = "35.238.67.22";
+						$username = "root";
 						$password = "124578";
 						$dbname = "crofiz";
 
@@ -27,7 +27,7 @@
 					}
 				}
 			?>";
-			window.location="http://hugeiceberg.ddns.net/WebPage/Main.php?msg="+a;
+			window.location="http://34.121.205.40/Main.php?msg="+a;
 		</script>
 		
 		

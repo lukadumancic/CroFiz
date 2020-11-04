@@ -15,7 +15,7 @@ while($row=$rez->fetch_assoc()){
 }
 
 function conn(){
-	$servername = "82.132.7.168";
+	$servername = "35.238.67.22";
 	$username = "crofiz";
 	$password = "peta@crofiz";
 	$dbname = "newdatabase";

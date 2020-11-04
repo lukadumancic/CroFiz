@@ -23,7 +23,7 @@
 			}
 			?>";
 			if (a=="1"){
-				window.location = 'http://hugeiceberg.ddns.net/WebPage/Main.php';
+				window.location = 'http://34.121.205.40/Main.php';
 		
 			}
 		</script>
@@ -37,7 +37,7 @@
 		
 		<script>
 			function vratiNaNaslovnu(){
-				window.location = 'http://hugeiceberg.ddns.net/WebPage/Naslovna.php';
+				window.location = 'http://34.121.205.40/Naslovna.php';
 			}
 		</script>
 		
@@ -59,8 +59,8 @@
 			//Ispis skripte
 				if(isset($_POST["id"])){
 
-					$servername = "hugeiceberg.ddns.net";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname = "crofiz";
 
@@ -75,7 +75,7 @@
 					$row=$rezultat->fetch_assoc();
 					//Ako je slika
 					if(strpos($row["type"],"mage")){
-						echo "<textarea class='slika' style='background-image:url(http://hugeiceberg.ddns.net/WebPage/Slike/".$_POST["id"].".jpg);' ></textarea>";
+						echo "<textarea class='slika' style='background-image:url(http://34.121.205.40/Slike/".$_POST["id"].".jpg);' ></textarea>";
 					}
 					else if(strpos($row["type"],"/pdf")){
 						echo "1";
@@ -89,17 +89,17 @@
 				document.getElementById("prikaz").innerHTML=a;
 			}
 			else if(a=="1"){
-				window.open("http://hugeiceberg.ddns.net/WebPage/Dokumenti/<?php if(isset($_POST["id"])){echo $_POST["id"];} ?>.pdf");
+				window.open("http://34.121.205.40/Dokumenti/<?php if(isset($_POST["id"])){echo $_POST["id"];} ?>.pdf");
 			}
 			else{
-				window.open("http://hugeiceberg.ddns.net/WebPage/Dokumenti/<?php if(isset($_POST["id"])){echo $_POST["id"];} ?>.docx");
+				window.open("http://34.121.205.40/Dokumenti/<?php if(isset($_POST["id"])){echo $_POST["id"];} ?>.docx");
 			}
 			
 			//Ispis svih skripti Mentora
 			function skripteMentor(){
 				document.getElementById("parOdabir").innerHTML="<?php 
-					$servername = "hugeiceberg.ddns.net";
-					$username = "admin";
+					$servername = "35.238.67.22";
+					$username = "root";
 					$password = "124578";
 					$dbname = "crofiz";
 
@@ -126,8 +126,8 @@
 			if(<?php echo True; ?>){
 				document.getElementById("parUnos").innerHTML='<?php echo '<form method="post" enctype="multipart/form-data"><input type="hidden" name="MAX_FILE_SIZE" value="20000000"><input name="userfile" type="file" id="userfile"><input type="checkbox" value="svi">Svi<br>';
 				
-				$servername = "hugeiceberg.ddns.net";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -156,8 +156,8 @@
 				$fileType = $_FILES['userfile']['type'];
 				
 				
-				$servername = "hugeiceberg.ddns.net";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -198,8 +198,8 @@
 		<script>
 			document.getElementById("par").innerHTML="<?php
 				
-				$servername = "hugeiceberg.ddns.net";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
@@ -238,8 +238,8 @@
 			}
 			//Dohvaćanje id-a korisnika
 			function getId($nick){
-				$servername = "hugeiceberg.ddns.net";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -257,8 +257,8 @@
 			}
 			function getObrazovanje($nick){
 				$id=getId($_SESSION["korisnickoIme"]);
-				$servername = "hugeiceberg.ddns.net";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -280,8 +280,8 @@
 				}
 			}
 			function getIme($id){
-				$servername = "hugeiceberg.ddns.net";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname2 = "crofiz";
 
@@ -298,8 +298,8 @@
 				return $row["ime"].' '.$row["prezime"];
 			}
 			function idMentor(){
-				$servername = "hugeiceberg.ddns.net";
-				$username = "admin";
+				$servername = "35.238.67.22";
+				$username = "root";
 				$password = "124578";
 				$dbname = "crofiz";
 
