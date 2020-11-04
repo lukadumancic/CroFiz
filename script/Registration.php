@@ -18,17 +18,17 @@
 				</header>
 				<nav>
 					<div id="nav">
-						<a class='main' href='http://82.132.7.168/Connectihno.php'>Chat</a>
+						<a class='main' href='http://34.121.205.40/Connectihno.php'>Chat</a>
 						<?php if(!loged())echo"<p style='font-size:25px;display:inline;'>/</p>
-						<a class='reg' href='http://82.132.7.168/Registration.php'>Registration</a>
+						<a class='reg' href='http://34.121.205.40/Registration.php'>Registration</a>
 						<p style='font-size:25px;display:inline;'>/</p>
-						<a class='log' href='http://82.132.7.168/LogIn.php'>LogIn</a>";
+						<a class='log' href='http://34.121.205.40/LogIn.php'>LogIn</a>";
 						else{
 							echo "
 							<p style='font-size:25px;display:inline;'>/</p>
-							<a class='main' href='http://82.132.7.168/Profile.php'>Profile</a>
+							<a class='main' href='http://34.121.205.40/Profile.php'>Profile</a>
 							<p style='font-size:25px;display:inline;'>/</p>
-							<a class='main' style='color:red;' href='http://82.132.7.168/LogOut.php'>LogOut</a>";
+							<a class='main' style='color:red;' href='http://34.121.205.40/LogOut.php'>LogOut</a>";
 						}?>
 
 					</div>
@@ -43,7 +43,7 @@
 					  var commands = {
 						'go to *term':function(term){
 							if(term=='chat'){term='Connectihno';}
-							window.location='http://82.132.7.168/'+term+'.php';
+							window.location='http://34.121.205.40/'+term+'.php';
 						}
 					  };
 					

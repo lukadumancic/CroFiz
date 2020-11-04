@@ -6,11 +6,11 @@
 
 <?php 
 	if(!isset($_GET['id'])){
-		header("Location: http://82.132.7.168/Zadaci.php");
+		header("Location: http://34.121.205.40/Zadaci.php");
 		die();
 	}
 	else if(!postoji()){
-		header("Location: http://82.132.7.168/Zadaci.php");
+		header("Location: http://34.121.205.40/Zadaci.php");
 		die();
 	}
 ?>
@@ -30,7 +30,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://82.132.7.168/Zadaci.php') {
+			if ($(this).prop('href') == 'http://34.121.205.40/Zadaci.php') {
 			  $(this).addClass('current');
 			}
 		  });

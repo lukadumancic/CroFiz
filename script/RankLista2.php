@@ -187,7 +187,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a style='margin-left: 10px;' class='nick' href='http://82.132.7.168/Profil.php?nick=".$row["nick"]."'>".$row["ime"]." ".$row["prezime"]."</a>";
+				return "<a style='margin-left: 10px;' class='nick' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".$row["ime"]." ".$row["prezime"]."</a>";
 				
 			}
 		?>

@@ -6,7 +6,7 @@
 	if(!isset($_SESSION["korisnickoIme"])){$_SESSION["korisnickoIme"]="*%test%*";}
 	if(!isset($_SESSION["zaporka"])){$_SESSION["zaporka"]="*%test%*";}
 	if(prijavljen()=="True"){
-		$_SESSION["userId"]=idGet($_SESSION["korisnickoIme"]);
+		$_SESSION["userId"]=getId($_SESSION["korisnickoIme"]);
 	}
 	
 	if(isset($_POST["logOut"])){

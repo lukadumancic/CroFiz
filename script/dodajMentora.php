@@ -13,6 +13,6 @@ include "Funkcije.php";
 		dodatnaPostignuca("ucenici",$_SESSION["idMentor"]);
 		
 	}
-	header("Location: http://82.132.7.168/Profil.php?nick=".getNick($_SESSION["idMentor"]));
+	header("Location: http://34.121.205.40/Profil.php?nick=".getNick($_SESSION["idMentor"]));
 	die();
 	?>

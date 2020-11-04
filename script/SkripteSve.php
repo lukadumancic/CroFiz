@@ -8,10 +8,10 @@
 	<?php //echo dohvatiSveSkripte(); ?>
 	<div class='paralelna1' style="background: url('Slicice/skripte-sat.jpg');background-size: cover;background-position: center;margin-top:4px; ">
 		<p><a href='Dokumenti/Skripte/Podsjetnik-za-drzavnu-maturu-iz-fizike.pdf'>Podsjetnik za državnu maturu</a></p>
-		<iframe src="http://82.132.7.168/Dokumenti/Skripte/Podsjetnik-za-drzavnu-maturu-iz-fizike.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
+		<iframe src="http://34.121.205.40/Dokumenti/Skripte/Podsjetnik-za-drzavnu-maturu-iz-fizike.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
 	</div>
 	<div class='paralelna1' style="background: url('Slicice/skripte-sat.jpg');background-size: cover;background-position: center;margin-top:4px; ">
 		<p><a href='Dokumenti/Skripte/drzavna-matura-com.pdf'>Skripte za državnu maturu</a></p>
-		<iframe src="http://82.132.7.168/Dokumenti/Skripte/drzavna-matura-com.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
+		<iframe src="http://34.121.205.40/Dokumenti/Skripte/drzavna-matura-com.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
 	</div>
 </div>

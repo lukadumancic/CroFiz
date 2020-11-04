@@ -18,7 +18,7 @@
 				//Dodatak navigaciji
 				$(function(){
 			  $('a').each(function() {
-				if ($(this).prop('href') == 'http://82.132.7.168/Ucenje.php') {
+				if ($(this).prop('href') == 'http://34.121.205.40/Ucenje.php') {
 				  $(this).addClass('current');
 				}
 			  });
@@ -117,16 +117,16 @@
 					$row=$rezultat->fetch_assoc();
 					//Ako je slika
 					if(strpos($row["type"],"mage")){
-						echo "<textarea class='slika' style='display: block;background-image:url(http://82.132.7.168/Slike/".$_POST["id"].".jpg);' ></textarea>";
+						echo "<textarea class='slika' style='display: block;background-image:url(http://34.121.205.40/Slike/".$_POST["id"].".jpg);' ></textarea>";
 					}
 					else if(strpos($row["type"],"/pdf")){
 						echo "<script>";
-						echo 'window.open("http://82.132.7.168/Dokumenti/'.$_POST["id"].'.pdf");';
+						echo 'window.open("http://34.121.205.40/Dokumenti/'.$_POST["id"].'.pdf");';
 						echo "</script>";
 					}
 					else{
 						echo "<script>";
-						echo 'window.open("http://82.132.7.168/Dokumenti/'.$_POST["id"].'.docx");';
+						echo 'window.open("http://34.121.205.40/Dokumenti/'.$_POST["id"].'.docx");';
 						echo "</script>";
 					}
 				}

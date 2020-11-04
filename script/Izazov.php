@@ -6,15 +6,15 @@
 <?php
 
 	if(prijavljen()=="False"){
-		header("Location: http://82.132.7.168/Main.php");
+		header("Location: http://34.121.205.40/Main.php");
 		die();
 	}
 	if(!isset($_GET['id'])){
-		header("Location: http://82.132.7.168/Zadaci.php");
+		header("Location: http://34.121.205.40/Zadaci.php");
 		die();
 	}
 	else if(!mojIzazov()){
-		header("Location: http://82.132.7.168/Zadaci.php?br=Mentorski");
+		header("Location: http://34.121.205.40/Zadaci.php?br=Mentorski");
 		die();
 	}
 ?>
@@ -33,7 +33,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://82.132.7.168/Zadaci.php') {
+			if ($(this).prop('href') == 'http://34.121.205.40/Zadaci.php') {
 			  $(this).addClass('current');
 			}
 		  });
@@ -367,7 +367,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick' style='margin-left:0px;' href='http://82.132.7.168/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]."</a>";
+				return "<a class='nick' style='margin-left:0px;' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]."</a>";
 				
 			}
 			function infoKorisnik2($id){
@@ -377,7 +377,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick3' style='margin-left:0px;' href='http://82.132.7.168/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]."</a>";
+				return "<a class='nick3' style='margin-left:0px;' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]."</a>";
 				
 			}
 			function trajanje(){

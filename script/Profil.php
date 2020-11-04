@@ -6,7 +6,7 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://82.132.7.168/Main.php");
+		header("Location: http://34.121.205.40/Main.php");
 		die();
 	}
 	if(!isset($_GET["nick"])){
@@ -154,7 +154,7 @@
 					dodajObjave();
 					
 					function profil(nick){
-						window.location="http://82.132.7.168/Profil.php?nick="+nick;
+						window.location="http://34.121.205.40/Profil.php?nick="+nick;
 					}
 					
 					window.onscroll = function(ev) {

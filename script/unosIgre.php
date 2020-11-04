@@ -157,7 +157,7 @@
 		
 		function ubaciMaturaInfo($s){
 			$conn=conn();
-			$sql="UPDATE `newdatabase`.`informacije` SET `maturazadaci`=concat(`maturazadaci`,'".$s."') WHERE `idkorisnik`='".$_SESSION['userId']."'";
+			$sql="UPDATE `crofiz`.`informacije` SET `maturazadaci`=concat(`maturazadaci`,'".$s."') WHERE `idkorisnik`='".$_SESSION['userId']."'";
 			$conn->query($sql);
 			$conn->close();
 		}

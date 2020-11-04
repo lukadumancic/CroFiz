@@ -4,7 +4,7 @@
 <script type='text/javascript'>
 	a="<?php if(!isset($_GET['id'])){echo '2';}?>"
 	if(a=="2"){
-		window.location="http://82.132.7.168/Zadaci.php";
+		window.location="http://34.121.205.40/Zadaci.php";
 	}
 </script>
 

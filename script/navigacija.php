@@ -2,7 +2,7 @@
 		
 		<div id="navigacija" class="navigacija">
 			<header>
-				<div class='crofiz'><a href="http://82.132.7.168">CROFIZ</a></div>
+				<div class='crofiz'><a href="http://34.121.205.40">CROFIZ</a></div>
 			</header>
 			<nav>
 				<div id="nav" >
@@ -89,8 +89,8 @@
 							echo "<div class='dodaci'>";
 							echo "<div style='display: inline;' onmouseover='prikaziDodatak()' class='nick2'>".mojaSlika()."</div>";
 							echo "<div id='dodatak' style='display:none;' onmouseleave='sakrijDodatak()'>";
-							echo "<a href='http://82.132.7.168/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".mojaSlika()."</a><br>";
-							echo "<a href='http://82.132.7.168/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".getName($_SESSION["userId"])." ".getSurName($_SESSION["userId"])."</a>";
+							echo "<a href='http://34.121.205.40/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".mojaSlika()."</a><br>";
+							echo "<a href='http://34.121.205.40/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".getName($_SESSION["userId"])." ".getSurName($_SESSION["userId"])."</a>";
 							echo "<br>".cp()." <img src='Slicice/cp.png' style='width:15px;height:15px;'>";
 							echo '<a style="display: inherit;" href="Leveli.php"><div class="levelanje">
 								<div class="prikazLevela">'.level1($_SESSION["userId"]).'</div><br>
@@ -168,7 +168,7 @@
 		//css-> a.current
 		$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == '<?php echo 'http://82.132.7.168'.substr($_SERVER['REQUEST_URI'],0,strpos($_SERVER['REQUEST_URI'],".php")+4) ?>') {
+			if ($(this).prop('href') == '<?php echo 'http://34.121.205.40'.substr($_SERVER['REQUEST_URI'],0,strpos($_SERVER['REQUEST_URI'],".php")+4) ?>') {
 			  $(this).addClass('current');
 			}
 		  });

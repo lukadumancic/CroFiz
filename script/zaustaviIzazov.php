@@ -20,7 +20,7 @@
 		}
 		$conn->close();
 	}
-	header("Location: http://82.132.7.168/Zadaci.php?br=Mentorski");
+	header("Location: http://34.121.205.40/Zadaci.php?br=Mentorski");
 	die();
 	
 	

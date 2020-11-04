@@ -3,7 +3,7 @@
 	include 'session.php';
 	
 	if(prijavljen()=="False"){
-		header("Location: http://82.132.7.168/Main.php");
+		header("Location: http://34.121.205.40/Main.php");
 		die();
 	}
 	if(isset($_POST["id"])){
@@ -11,7 +11,7 @@
 		$sql="select * from dvoboj where id='".$_POST["id"]."'";
 		$rez=$conn->query($sql);
 		if($rez->num_rows==0){
-			header("Location: http://82.132.7.168/Zadaci.php?br=Dvoboj");
+			header("Location: http://34.121.205.40/Zadaci.php?br=Dvoboj");
 			die();
 		}
 		else{
@@ -26,7 +26,7 @@
 					$_SESSION['dvobojId']=$_POST["id"];
 				}
 				else{
-					header("Location: http://82.132.7.168/Zadaci.php?br=Dvoboj");
+					header("Location: http://34.121.205.40/Zadaci.php?br=Dvoboj");
 					die();
 				}
 			}
@@ -35,14 +35,14 @@
 					$_SESSION['dvobojId']=$_POST["id"];
 				}
 				else{
-					header("Location: http://82.132.7.168/Zadaci.php?br=Dvoboj");
+					header("Location: http://34.121.205.40/Zadaci.php?br=Dvoboj");
 					die();
 				}
 			}
 		}
 	}
 	else if(zivoti()==0){
-		header("Location: http://82.132.7.168/Zadaci.php?br=Dvoboj");
+		header("Location: http://34.121.205.40/Zadaci.php?br=Dvoboj");
 		die();
 	}
 	
@@ -64,10 +64,10 @@
 				<div id="nav">
 				</div>
 			</nav>
-			 <iframe style='margin-top: 30px;margin-bottom: -15px;' class='progressIgra' id='ifrm' scrolling="no" src="http://82.132.7.168/progressIgra.php"></iframe> 
+			 <iframe style='margin-top: 30px;margin-bottom: -15px;' class='progressIgra' id='ifrm' scrolling="no" src="http://34.121.205.40/progressIgra.php"></iframe> 
 			 <script>
 				IFrame=document.getElementById("ifrm");
-				IFrame.src = 'http://82.132.7.168/progressIgra.php';
+				IFrame.src = 'http://34.121.205.40/progressIgra.php';
 				IFrame.style.backgroundColor = "transparent";
 				IFrame.frameBorder = "0";
 				IFrame.allowTransparency="true";

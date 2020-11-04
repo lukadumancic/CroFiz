@@ -6,16 +6,16 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://82.132.7.168/Main.php");
+		header("Location: http://34.121.205.40/Main.php");
 		die();
 	}
 	else if(prijavljen()=="True"){
 		if(!mojaGrupa()){
-			header("Location: http://82.132.7.168/Grupe.php");
+			header("Location: http://34.121.205.40/Grupe.php");
 			die();
 		}
 		if(!glava()){
-			header("Location: http://82.132.7.168/Grupa.php?id=".$_GET["id"]);
+			header("Location: http://34.121.205.40/Grupa.php?id=".$_GET["id"]);
 			die();
 		}
 	}
@@ -33,7 +33,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://82.132.7.168/Grupe.php') {
+			if ($(this).prop('href') == 'http://34.121.205.40/Grupe.php') {
 			  $(this).addClass('current');
 			}
 		  });
@@ -52,7 +52,7 @@
 			
 			<div class='opis2' style="background: url('Slicice/postavke-banner.jpg');background-size: cover;background-position: center; ">
 				<strong class='naslovStranice'>Postavke grupe</strong>
-				<p><a class='grupa' href='http://82.132.7.168/Grupa.php?id=<?php echo $_GET["id"]; ?>' ><?php echo imeGrupe(); ?></a></p>
+				<p><a class='grupa' href='http://34.121.205.40/Grupa.php?id=<?php echo $_GET["id"]; ?>' ><?php echo imeGrupe(); ?></a></p>
 			</div>
 			
 			<div style='background-color:#333333;padding: 1px;'>
@@ -280,7 +280,7 @@
 					$sql="UPDATE `grupe` SET `mentorid`='0', `idkor`='' WHERE `id`='".$_GET["id"]."'";
 					$conn->query($sql);
 					$conn->close();
-					return "<script>window.location='http://82.132.7.168/Grupe.php';</script>";
+					return "<script>window.location='http://34.121.205.40/Grupe.php';</script>";
 			}
 		}
 		?>

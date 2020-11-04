@@ -10,6 +10,6 @@ include "Funkcije.php";
 		obavijesti($_SESSION["idPrijatelj"], '<a href="Profil.php?nick='.$_SESSION['korisnickoIme'].'">'.$_SESSION['korisnickoIme'].'</a> vas dodaje na listu prijatelja');
 					
 	}
-	header("Location: http://82.132.7.168/Profil.php?nick=".getNick($_SESSION["idPrijatelj"]));
+	header("Location: http://34.121.205.40/Profil.php?nick=".getNick($_SESSION["idPrijatelj"]));
 	die();
 ?>

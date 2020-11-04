@@ -29,8 +29,8 @@ while True:
             slika=l[6][6:len(l[6])-1]
             dan=l[7][4:]
             print(ime,tekst,rjesenje,jedinica,podrucje,br,slika,dan)
-            cursor.execute("INSERT INTO `newdatabase`.`zadaci` (`ime`, `tekst`, `rjesenje`, `jedinica`, `razred`, `podrucje`, `br`, `slika`, `dan`) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')".format(ime,tekst,rjesenje,jedinica,str(i),podrucje,br,slika,dan))
-        cursor.execute("INSERT INTO `newdatabase`.`objave` (`objava`, `idkorisnik`,`br`) VALUES ('Dnevni zadaci su spremni! Možes li riješiti današnji problem?', '35', '0')")
+            cursor.execute("INSERT INTO `crofiz`.`zadaci` (`ime`, `tekst`, `rjesenje`, `jedinica`, `razred`, `podrucje`, `br`, `slika`, `dan`) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')".format(ime,tekst,rjesenje,jedinica,str(i),podrucje,br,slika,dan))
+        cursor.execute("INSERT INTO `crofiz`.`objave` (`objava`, `idkorisnik`,`br`) VALUES ('Dnevni zadaci su spremni! Možes li riješiti današnji problem?', '35', '0')")
         if datetime.datetime.today().weekday()==6:
             print("Tjedni zadaci")
             for i in range(1,5):

@@ -85,7 +85,7 @@
 					return 'Slike/Korisnik'.$id.'.jpg';
 			}
 			function slikaGrupa($id){
-				return "<a href='http://82.132.7.168/Grupa.php?id=".$id."'><img src='Slike/Grupa$id.jpg' class='krugSlika' style='width: 100px;height: 100px;margin-top: 0px;align-self: center;padding: 30%;padding-top:10px;padding-bottom: 0px;'></a>";
+				return "<a href='http://34.121.205.40/Grupa.php?id=".$id."'><img src='Slike/Grupa$id.jpg' class='krugSlika' style='width: 100px;height: 100px;margin-top: 0px;align-self: center;padding: 30%;padding-top:10px;padding-bottom: 0px;'></a>";
 			}
 			function rijesenostZadatka($id){
 				$conn=conn();
@@ -197,7 +197,7 @@
 		function prijavaDatum(){
 			if(prijavljen()=="True"){
 				$conn=conn();
-				$sql="UPDATE `newdatabase`.`informacije` SET `datum`='".time()."' WHERE `idkorisnik`='".$_SESSION['userId']."'";
+				$sql="UPDATE `crofiz`.`informacije` SET `datum`='".time()."' WHERE `idkorisnik`='".$_SESSION['userId']."'";
 				$conn->query($sql);
 				$conn->close();
 			}
@@ -212,12 +212,12 @@
 				$datum=$row["datum"];
 				if($datum<strtotime("today")){
 					if($datum<strtotime("yesterday")){
-						$sql="UPDATE `newdatabase`.`informacije` SET `zaredom`='1' WHERE `idkorisnik`='".$_SESSION['userId']."'";
+						$sql="UPDATE `crofiz`.`informacije` SET `zaredom`='1' WHERE `idkorisnik`='".$_SESSION['userId']."'";
 						$conn->query($sql);
 						ispisPrijavaZaRedom(1);
 					}
 					else{
-						$sql="UPDATE `newdatabase`.`informacije` SET `zaredom`=`zaredom`+1 WHERE `idkorisnik`='".$_SESSION['userId']."'";
+						$sql="UPDATE `crofiz`.`informacije` SET `zaredom`=`zaredom`+1 WHERE `idkorisnik`='".$_SESSION['userId']."'";
 						$conn->query($sql);
 						ispisPrijavaZaRedom($row["zaredom"]);
 					}
@@ -259,6 +259,7 @@
 					$manja=0;
 					$level=0;
 					while($xp>=$veca){
+						return;
 						$level++;
 						$manja=$veca;
 						$veca+=20*pow(2,$level);
@@ -283,6 +284,7 @@
 					$manja=0;
 					$level=0;
 					while($xp>=$veca){
+						return;
 						$level++;
 						$manja=$veca;
 						$veca+=20*pow(2,$level);
@@ -359,6 +361,7 @@
 					$manja=0;
 					$level=1;
 					while($xp>=$veca){
+						return;
 						$level++;
 						$manja=$veca;
 						$veca+=10*pow(2,$level);
@@ -404,7 +407,7 @@
 				else{
 					$br=$rez->num_rows;
 				}
-				$sql="UPDATE `newdatabase`.`postignuca` SET `ucenici`='".$br."' WHERE `id`='".$_SESSION["userId"]."'";
+				$sql="UPDATE `crofiz`.`postignuca` SET `ucenici`='".$br."' WHERE `id`='".$_SESSION["userId"]."'";
 				$conn->close();
 			}
 			function cp(){
@@ -412,7 +415,7 @@
 				$sql="select * from cp where id='".$_SESSION["userId"]."'";
 				$rez=$conn->query($sql);
 				if($rez->num_rows===0){
-					$sql="INSERT INTO `newdatabase`.`cp` (`id`, `cp`) VALUES ('".$_SESSION["userId"]."', '0')";
+					$sql="INSERT INTO `crofiz`.`cp` (`id`, `cp`) VALUES ('".$_SESSION["userId"]."', '0')";
 					$conn->query($sql);
 					$conn->close();
 					return 0;
@@ -427,7 +430,7 @@
 				
 			} 
 			function dodajCp($x){
-				$sql="UPDATE `newdatabase`.`cp` SET `cp`=`cp`+'".$x."' WHERE `id`='".$_SESSION["userId"]."'";
+				$sql="UPDATE `crofiz`.`cp` SET `cp`=`cp`+'".$x."' WHERE `id`='".$_SESSION["userId"]."'";
 				$conn=conn();
 				$conn->query($sql);
 				$conn->close();
