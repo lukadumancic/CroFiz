@@ -27,10 +27,10 @@
 				return $dateArray[2].".".$dateArray[1].".".$dateArray[0]." ".$timeArray2[0].":".$timeArray2[1];
 			}
 			function conn(){
-				$servername = "82.132.7.168";
-				$username = "crofiz";
-				$password = "peta@crofiz";
-				$dbname = "newdatabase";
+				$servername = "35.238.67.22";
+				$username = "root";
+				$password = "124578";
+				$dbname = "crofiz";
 				$conn = new mysqli($servername, $username, $password, $dbname);
 				$conn->set_charset("utf8");
 				return $conn;
