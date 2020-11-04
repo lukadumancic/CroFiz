@@ -6,7 +6,7 @@
 
 <?php
 	if(prijavljen()=="True"){
-		header("Location: http://82.132.7.168/Naslovna.php");
+		//header("Location: http://82.132.7.168/Naslovna.php");
 		die();
 	}
 ?>

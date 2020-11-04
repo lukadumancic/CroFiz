@@ -6,7 +6,7 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://82.132.7.168/Main.php");
+		// header("Location: http://82.132.7.168/Main.php");
 		die();
 	}
 ?>
