@@ -1,6 +1,6 @@
 <?php
 	if(prijavljen()=="True"){
-		header("Location: http://localhost/Main.php");
+		header("Location: http://34.121.205.40/Main.php");
 		die();
 	}
 ?>

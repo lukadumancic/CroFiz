@@ -54,7 +54,7 @@
 					$conn->close();
 					
 				}
-				header("Location: http://localhost/Grupa.php?id=".$_SESSION["idGrupa"]);
+				header("Location: http://34.121.205.40/Grupa.php?id=".$_SESSION["idGrupa"]);
 				die();
 			}
 			

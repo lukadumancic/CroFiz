@@ -6,16 +6,16 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://localhost/Main.php");
+		header("Location: http://34.121.205.40/Main.php");
 		die();
 	}
 	if(!isset($_GET["id"])){
-		header("Location: http://localhost/Grupe.php");
+		header("Location: http://34.121.205.40/Grupe.php");
 		die();
 	}
 	else if(prijavljen()=="True"){
 		if(!mojaGrupa()){
-			header("Location: http://localhost/Grupe.php");
+			header("Location: http://34.121.205.40/Grupe.php");
 			die();
 		}
 	}
@@ -33,7 +33,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://localhost/Grupe.php') {
+			if ($(this).prop('href') == 'http://34.121.205.40/Grupe.php') {
 			  $(this).addClass('current');
 			}
 		  });
@@ -44,7 +44,7 @@
 		<article id="art">
 			<div class='opis2' style="background: url('Slicice/dokumenti-banner.jpg');background-size: cover;background-position: center; ">
 				<strong class='naslovStranice'>Dokumenti</strong>
-				<p><a class='grupa' href='http://localhost/Grupa.php?id=<?php echo $_GET["id"]; ?>' ><?php echo imeGrupe(); ?></a></p>
+				<p><a class='grupa' href='http://34.121.205.40/Grupa.php?id=<?php echo $_GET["id"]; ?>' ><?php echo imeGrupe(); ?></a></p>
 			</div>
 			
 			<div class='opis2'>
@@ -109,7 +109,7 @@
 						}
 						if ($vrsta==".pdf"){
 							echo '
-							<iframe src="http://localhost/Dokumenti/'.$row['name'].$row['id'].$vrsta.'" style="width:600px; height:500px;" frameborder="0"></iframe>
+							<iframe src="http://34.121.205.40/Dokumenti/'.$row['name'].$row['id'].$vrsta.'" style="width:600px; height:500px;" frameborder="0"></iframe>
 							';
 						}
 					}

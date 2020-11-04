@@ -6,11 +6,11 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://localhost/Main.php");
+		header("Location: http://34.121.205.40/Main.php");
 		die();
 	}
 	if(!profesor2()){
-		header("Location: http://localhost/Main.php");
+		header("Location: http://34.121.205.40/Main.php");
 		die();
 	}
 ?>

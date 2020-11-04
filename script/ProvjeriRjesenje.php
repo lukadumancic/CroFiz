@@ -108,7 +108,7 @@
 		}
 		$conn->close();
 		
-		header("Location: http://localhost/Zadatak.php?id=".$_POST["idZadatak"]);
+		header("Location: http://34.121.205.40/Zadatak.php?id=".$_POST["idZadatak"]);
 		die();
 		
 	function bodovi(){

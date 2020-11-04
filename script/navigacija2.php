@@ -49,7 +49,7 @@
 							echo "</div>";
 							
 							echo "<div class='dodaci'>";
-							echo "<a onmouseover='prikaziDodatak()' class='nick2' href='http://localhost/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".mojaSlika()."</a>";
+							echo "<a onmouseover='prikaziDodatak()' class='nick2' href='http://34.121.205.40/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".mojaSlika()."</a>";
 							echo "<div id='dodatak' style='display:none;' onmouseleave='sakrijDodatak()'>";
 							echo "<a class='dodatak' href='http://". $_SESSION["host"]."/Postavke.php'>Postavke</a>";
 							echo "<a class='dodatak' href='http://". $_SESSION["host"]."/PromjenaLozinke.php'>Promjena lozinke</a>";

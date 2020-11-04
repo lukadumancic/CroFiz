@@ -29,7 +29,7 @@
 				if(mojProfil()){echo "<form method='post' style='display:inline;float: right;margin-right: 5px;margin-top: 5px;'><input type='hidden' name='vrsta' value='objava'><input type='hidden' name='id' value='".$row['id']."'><a title='Uređivanje objave'><input type='image' src='Slicice/tools.jpg' alt='Submit Form'></a></form>";}
 				echo "<textarea class='ispis'  readonly>".$row["objava"]."</textarea>";
 				if($row["type"]){
-					echo "<br><img class='slika' src='http://localhost/Slike/objava".$row["id"].".jpg'>";
+					echo "<br><img class='slika' src='http://34.121.205.40/Slike/objava".$row["id"].".jpg'>";
 				}
 				echo "</div>";
 				echo "<p style='background-color: #696969;padding: 1px;'></p>";
@@ -47,7 +47,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick3' href='http://localhost/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]."</a>";
+				return "<a class='nick3' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]."</a>";
 				
 			}
 			function mojProfil(){

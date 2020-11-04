@@ -16,11 +16,11 @@ session_start();
 			
 			dodatnaPostignuca("tema",$_SESSION["userId"]);
 			
-			header("Location: http://localhost/Tema2.php?id=".$row["id"]);
+			header("Location: http://34.121.205.40/Tema2.php?id=".$row["id"]);
 			die();
 		}
 	}
-	header("Location: http://localhost/Forum.php");
+	header("Location: http://34.121.205.40/Forum.php");
 	die();
 
 ?>

@@ -97,7 +97,7 @@
 						return 
 							"<div class='opis2' style='background: url(\"Slicice/to-do.jpg\");background-size: cover;background-position: center; '>
 								<p style='color:white;font-size:20px;'>Ovotjedni zadatak</p>
-								<p><a style='font-size:40px;' class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>
+								<p><a style='font-size:40px;' class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>
 								<p class='rijesenostZadatka tamnije' style='width:35%'>".rijesenostZadatka($row["id"])."<br>
 								".objavljenZadatak($row["id"])."
 								</p>
@@ -129,7 +129,7 @@
 						return 
 							"<div class='opis2' style='background: url(\"Slicice/now.jpg\");background-size: cover;background-position: center; '>
 								<p style='color:white;font-size:20px;'>Današnji zadatak</p>
-								<p><a style='font-size:40px;' class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>
+								<p><a style='font-size:40px;' class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>
 								<p class='rijesenostZadatka tamnije' style='width:35%'>".rijesenostZadatka($row["id"])."<br>
 								".objavljenZadatak($row["id"])."
 								</p>
@@ -157,7 +157,7 @@
 							<p style='background-color: #696969;padding: 1px;'></p>
 							<p>$i. razred</p>
 							<p>
-							<a class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a>
+							<a class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a>
 							</p>
 							<p class='rijesenostZadatka tamnije'>
 							".rijesenostZadatka($row["id"])."<br>
@@ -192,7 +192,7 @@
 							<p style='background-color: #696969;padding: 1px;'></p>
 							<p>$i. razred</p>
 							<p>
-							<a class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a>
+							<a class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a>
 							</p>
 							<p class='rijesenostZadatka tamnije'>
 							".rijesenostZadatka($row["id"])."<br>
@@ -219,7 +219,7 @@
 						$rez=$conn->query($sql);
 						$ret="";
 						while($row=$rez->fetch_assoc()){
-							$ret.="<p class='dan'>".$row["dan"]."  <a class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
+							$ret.="<p class='dan'>".$row["dan"]."  <a class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
 						}
 						$conn->close();
 						
@@ -242,7 +242,7 @@
 					
 					$rez->fetch_assoc();
 					while($row=$rez->fetch_assoc()){
-						$ret.="<p class='dan'>".$row["dan"]."  <a class='zadatak underline' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
+						$ret.="<p class='dan'>".$row["dan"]."  <a class='zadatak underline' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
 					}
 						
 					$conn->close();
@@ -322,7 +322,7 @@
 										$ret.="<table>";
 										while($row2=$rez2->fetch_assoc()){
 											$ret.="<tr>";
-											$ret.="<td><a class='izazov' href='http://localhost/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a></td>";
+											$ret.="<td><a class='izazov' href='http://34.121.205.40/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a></td>";
 											$ret.="<td>".prebrojIzazovTocnostSvihUcenika($row2['id'])."</td>";
 											$ret.="<td><form style='display:inline;' method='post' action='zaustaviIzazov.php' ><input type='hidden' name='id' value=".$row2["id"]."><input class='izazovExtraButtonZaustavi' type='submit' value='Zaustavi'></form></td>";
 											$ret.="<td><form style='display:inline;' method='post' action='obrisiIzazov.php' ><input type='hidden' name='id' value=".$row2["id"]."><input class='izazovExtraButton' type='submit' value='Obriši'></form></td>";
@@ -338,7 +338,7 @@
 										$ret.="<table>";
 										while($row2=$rez2->fetch_assoc()){
 											$ret.="<tr>";
-											$ret.="<td><a class='izazov' href='http://localhost/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a></td>";
+											$ret.="<td><a class='izazov' href='http://34.121.205.40/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a></td>";
 											$ret.="<td>".prebrojIzazovTocnostSvihUcenika($row2['id'])."</td>";
 											$ret.="<td><form style='display:inline;' method='post' action='zaustaviIzazov.php' ><input type='hidden' name='id' value=".$row2["id"]."><input class='izazovExtraButtonPokreni' type='submit' value='Pokreni'></form></td>";
 											$ret.="<td><form style='display:inline;' method='post' action='obrisiIzazov.php' ><input type='hidden' name='id' value=".$row2["id"]."><input class='izazovExtraButton' type='submit' value='Obriši'></form></td>";
@@ -374,7 +374,7 @@
 										$ret.="<table>";
 										while($row2=$rez2->fetch_assoc()){
 											$ret.="<tr>";
-											$ret.="<td><a class='izazov' href='http://localhost/izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a></td>";
+											$ret.="<td><a class='izazov' href='http://34.121.205.40/izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a></td>";
 											$ret.="<td>".prebrojIzazovTocnost($row2['id'])."</td>";
 											$ret.="</tr>";
 										}
@@ -387,7 +387,7 @@
 										$ret.="<table>";
 										while($row2=$rez2->fetch_assoc()){
 											$ret.="<tr>";
-											$ret.="<td><a class='izazov' href='http://localhost/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a></td>";
+											$ret.="<td><a class='izazov' href='http://34.121.205.40/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a></td>";
 											$ret.="<td>".prebrojIzazovTocnost($row2['id'])."</td>";
 											$ret.="</tr>";
 										}
@@ -412,7 +412,7 @@
 						$rez=$conn->query($sql);
 						$ret="";
 						while($row=$rez->fetch_assoc()){
-							$ret.="<a class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
+							$ret.="<a class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
 						}
 						$conn->close();
 						
@@ -484,8 +484,8 @@
 					$rez=$conn->query($sql);
 					echo "document.getElementById('zadaciArhiva$razred').innerHTML+='<div style=\"display:none;\" id=\"$podrucje\"><strong>$podrucje</strong><br></div>';";
 					while($row=$rez->fetch_assoc()){
-						echo "document.getElementById('$podrucje').innerHTML+='<a style=\"display: inline;\" class=\"zadatak\" href=\"http://localhost/Zadatak.php?id=".$row["id"]."\">".$row["ime"]."</a><br>';";
-						echo "document.getElementById('sve$razred').innerHTML+='<a style=\"display: inline;\" class=\"zadatak\" href=\"http://localhost/Zadatak.php?id=".$row["id"]."\">".$row["ime"]."</a><br>';";
+						echo "document.getElementById('$podrucje').innerHTML+='<a style=\"display: inline;\" class=\"zadatak\" href=\"http://34.121.205.40/Zadatak.php?id=".$row["id"]."\">".$row["ime"]."</a><br>';";
+						echo "document.getElementById('sve$razred').innerHTML+='<a style=\"display: inline;\" class=\"zadatak\" href=\"http://34.121.205.40/Zadatak.php?id=".$row["id"]."\">".$row["ime"]."</a><br>';";
 					}
 					$conn->close();
 			}
@@ -502,7 +502,7 @@
 				echo "</tr>";
 				while($row=$rez->fetch_assoc()){
 					echo "<tr>";
-					echo "<td><a class=\"zadatak\" href=\"http://localhost/Zadatak.php?id=".$row["id"]."\">".$row["ime"]."</a></td>';";
+					echo "<td><a class=\"zadatak\" href=\"http://34.121.205.40/Zadatak.php?id=".$row["id"]."\">".$row["ime"]."</a></td>';";
 					echo "<td class='rjz'>".rijesenostZadatka($row['id'])."</td>";
 					echo "<td class='pdr'>".$row["podrucje"]."</td>";
 					echo "</tr>";
@@ -566,7 +566,7 @@
 									$postotak="0%";
 								}
 								
-								$ret.="<a class='izazov' href='http://localhost/izazov.php?id=".$row["id"]."'>".$row['ime']."</a>";
+								$ret.="<a class='izazov' href='http://34.121.205.40/izazov.php?id=".$row["id"]."'>".$row['ime']."</a>";
 								$ret.="<p style='color: #8C8C8C;'>Postotak riješenosti<br>".$postotak."</p>";
 							}
 						$conn->close();

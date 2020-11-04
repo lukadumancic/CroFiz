@@ -21,7 +21,7 @@
 				
 				
 	}
-	header("Location: http://localhost/Grupe.php");
+	header("Location: http://34.121.205.40/Grupe.php");
 	die();
 
 	

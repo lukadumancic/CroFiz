@@ -12,7 +12,7 @@
 				while($row=$rez->fetch_assoc()){
 					$ret.="<div>";
 					$ret.="<strong class='tamnije'>".brojObjava($row["id"])."</strong>  ";
-					$ret.="<a class='tema' href='http://localhost/Tema2.php?id=".$row['id']."' >".$row["ime"]."</a> ";
+					$ret.="<a class='tema' href='http://34.121.205.40/Tema2.php?id=".$row['id']."' >".$row["ime"]."</a> ";
 					$ret.="<div class='temaMaliInfo'>";
 					$ret.="Objavio ".infoKorisnik($row["idkorisnik"])." ";
 					$ret.=obradiDatum($row["datum"]);
@@ -31,7 +31,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick3' style='font-size: 10px;margin-left:0px;' href='http://localhost/Profil.php?nick=".$row["nick"]."'>".$row["ime"]." ".$row["prezime"]."</a>";
+				return "<a class='nick3' style='font-size: 10px;margin-left:0px;' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".$row["ime"]." ".$row["prezime"]."</a>";
 				
 			}
 			function brojObjava($id){

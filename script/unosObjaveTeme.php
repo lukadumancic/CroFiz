@@ -18,7 +18,7 @@
 				}
 	}
 				
-		header("Location: http://localhost/Tema.php?id=".$_POST["id"]);
+		header("Location: http://34.121.205.40/Tema.php?id=".$_POST["id"]);
 		die();	
 			
 	?>

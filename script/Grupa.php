@@ -6,12 +6,12 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://localhost/Main.php");
+		header("Location: http://34.121.205.40/Main.php");
 		die();
 	}
 	if(prijavljen()=="True"){
 		if(!mojaGrupa()){
-			header("Location: http://localhost/Grupe.php");
+			header("Location: http://34.121.205.40/Grupe.php");
 			die();
 		}
 	}
@@ -29,7 +29,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://localhost/Grupe.php') {
+			if ($(this).prop('href') == 'http://34.121.205.40/Grupe.php') {
 			  $(this).addClass('current');
 			}
 		  });
@@ -110,7 +110,7 @@
 					dodajObjave();
 					
 					function profil(nick){
-						window.location="http://localhost/Profil.php?nick="+nick;
+						window.location="http://34.121.205.40/Profil.php?nick="+nick;
 					}
 					window.onscroll = function(ev) {
 						if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {

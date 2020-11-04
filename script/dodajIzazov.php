@@ -66,6 +66,6 @@ include "Funkcije.php";
 				$_SESSION["vrsta"]="izazov";
 		}				
 	}
-	header("Location: http://localhost/Zadaci.php?br=Mentorski");
+	header("Location: http://34.121.205.40/Zadaci.php?br=Mentorski");
 	die();
 	?>

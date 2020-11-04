@@ -44,7 +44,7 @@
 			}
 		}
 		$conn->close();
-		header("Location: http://localhost/Izazov.php?id=".$_POST['id']);
+		header("Location: http://34.121.205.40/Izazov.php?id=".$_POST['id']);
 		die();
 	?>
 

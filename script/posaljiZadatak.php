@@ -18,7 +18,7 @@
 	}
 	
 	
-	header("Location: http://localhost/SlanjeZadataka.php");
+	header("Location: http://34.121.205.40/SlanjeZadataka.php");
 	die();
 
 

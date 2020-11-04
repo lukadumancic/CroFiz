@@ -18,7 +18,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://localhost/Zadaci.php') {
+			if ($(this).prop('href') == 'http://34.121.205.40/Zadaci.php') {
 			  $(this).addClass('current');
 			}
 		  });
@@ -103,7 +103,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick3' href='http://localhost/Profil.php?nick=".$row["nick"]."'>".$row["ime"]." ".$row["prezime"]."</a>";
+				return "<a class='nick3' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".$row["ime"]." ".$row["prezime"]."</a>";
 				
 			}
 		?>
