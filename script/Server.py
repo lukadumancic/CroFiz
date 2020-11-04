@@ -124,6 +124,7 @@ Kako biste aktivirali svoj racun kliknite na sljedecu stranicu:<br>
 
         cursor.close()
         cursor2.close()
+        conn.commit()
 
         cursor3 = conn.cursor(buffered=True)
         cursor4 = conn.cursor(buffered=True)
