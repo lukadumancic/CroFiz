@@ -19,6 +19,6 @@
 	else{
 		$_SESSION["poruka"]="Neuspjelo slanje poruke!";
 	}
-	header("Location: http://34.121.205.40/Poruke.php");
+	header("Location: http://localhost/Poruke.php");
 	die();
 ?>

@@ -6,7 +6,7 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://34.121.205.40/Main.php");
+		header("Location: http://localhost/Main.php");
 		die();
 	}
 ?>
@@ -292,7 +292,7 @@
 							while($row=$rezultat->fetch_assoc()){
 								$i++;
 								echo "<div class='grupaDiv'>";
-								echo "<a class='grupa' style='color: #444343;' href='http://34.121.205.40/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>";
+								echo "<a class='grupa' style='color: #444343;' href='http://localhost/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>";
 								echo slikaGrupa($row['id']);echo "<div class='tamnije'>";
 								
 								echo "Broj članova:";
@@ -321,7 +321,7 @@
 						while($row=$rezultat->fetch_assoc()){
 							$i++;
 							echo "<div class='grupaDiv'>";
-							echo "<a class='grupa' style='color: #444343;' href='http://34.121.205.40/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>";
+							echo "<a class='grupa' style='color: #444343;' href='http://localhost/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>";
 							echo slikaGrupa($row['id']);
 							
 							echo "<div class='tamnije'>";

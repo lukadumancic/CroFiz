@@ -15,7 +15,7 @@
 
 	?>";
 	if(a=="1"){
-		window.location='http://34.121.205.40/Main.php';
+		window.location='http://localhost/Main.php';
 	}
 </script>
 
@@ -303,7 +303,7 @@
 						$rezultat=$conn->query($sql);
 						if($rezultat->num_rows>0){
 							while($row=$rezultat->fetch_assoc()){
-								echo "<a class='grupa' href='http://34.121.205.40/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>";
+								echo "<a class='grupa' href='http://localhost/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>";
 							}
 						}
 					}
@@ -313,7 +313,7 @@
 					$rezultat=$conn->query($sql);
 					if($rezultat->num_rows>0){
 						while($row=$rezultat->fetch_assoc()){
-							echo "<a class='grupa' href='http://34.121.205.40/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>";
+							echo "<a class='grupa' href='http://localhost/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>";
 						}
 					}
 				}

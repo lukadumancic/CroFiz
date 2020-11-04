@@ -20,7 +20,7 @@
 				echo "<p class='tamnije' style='font-size:10px;'>".obradiDatum($row["datum"])."</p></div><br>";
 				echo "<textarea class='ispis'  readonly>".$row["objava"]."</textarea>";
 				if($row["type"]){
-					echo "<br><img class='slika' src='http://34.121.205.40/Slike/objava".$row["id"].".jpg'>";
+					echo "<br><img class='slika' src='http://localhost/Slike/objava".$row["id"].".jpg'>";
 				}
 				echo "</div>";
 				echo "<p style='background-color: #696969;padding: 1px;'></p>";
@@ -40,7 +40,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick3' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
+				return "<a class='nick3' href='http://localhost/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
 				
 			}
 

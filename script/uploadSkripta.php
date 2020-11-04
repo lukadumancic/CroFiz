@@ -63,11 +63,11 @@
 			
 			}
 			if(isset($_SESSION['idGrupeDokumenit'])){
-				header("Location: http://34.121.205.40/dokumenti.php?id=".$_SESSION['idGrupeDokumenit']);
+				header("Location: http://localhost/dokumenti.php?id=".$_SESSION['idGrupeDokumenit']);
 				die();
 			}
 			else{
-				header("Location: http://34.121.205.40/Skripte.php?br=MentorskeSkripte");
+				header("Location: http://localhost/Skripte.php?br=MentorskeSkripte");
 				die();
 			}
 			

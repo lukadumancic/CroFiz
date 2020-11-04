@@ -11,7 +11,7 @@
 		}
 	?>"
 	if(a==1){
-		window.location="http://34.121.205.40/Naslovna.php";
+		window.location="http://localhost/Naslovna.php";
 	}
 </script>
 

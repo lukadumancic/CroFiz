@@ -6,7 +6,7 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://34.121.205.40/Main.php");
+		header("Location: http://localhost/Main.php");
 		die();
 	}
 ?>
@@ -72,7 +72,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick3' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
+				return "<a class='nick3' href='http://localhost/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
 				
 			}
 		?>

@@ -93,7 +93,7 @@
 				<p class="odabrano" style="display:inline">Dnevni zadaci</p>
 				<br><button style="font-size: 20px;height: 45px;width: 130px;font-family: serif;" class="navbutton" type="button" onClick="prikaziRankListu()">Rank Lista</button>
 				<script>
-					function prikaziRankListu(){window.location='http://34.121.205.40/RankLista.php';}
+					function prikaziRankListu(){window.location='http://localhost/RankLista.php';}
 				</script>
 				<div class="ispisZadataka">
 					<?php
@@ -121,7 +121,7 @@
 				<p class="odabrano" style="display:inline">Tjedni izazov</p>
 				<br><button style="font-size: 20px;height: 45px;width: 130px;font-family: serif;" class="navbutton" type="button" onClick="prikaziRankListu2()">Rank Lista</button>
 				<script>
-					function prikaziRankListu2(){window.location='http://34.121.205.40/RankLista2.php';}
+					function prikaziRankListu2(){window.location='http://localhost/RankLista2.php';}
 				</script>
 				<div class="ispisZadataka">
 					<?php
@@ -251,7 +251,7 @@
 						$rez=$conn->query($sql);
 						$row=$rez->fetch_assoc();
 						$conn->close();
-						return "<a style='font-size:40px;' class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a>";
+						return "<a style='font-size:40px;' class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a>";
 					}
 					else{
 						$conn->close();
@@ -285,7 +285,7 @@
 						$rez=$conn->query($sql);
 						$row=$rez->fetch_assoc();
 						$conn->close();
-						return "<a style='font-size:40px;' class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a>";
+						return "<a style='font-size:40px;' class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a>";
 					}
 					else{
 						$conn->close();
@@ -318,7 +318,7 @@
 						$sql="select * from zadaci where razred='$i' and br='1' order by datum desc limit 1";
 						$rez=$conn->query($sql);
 						while($row=$rez->fetch_assoc()){
-							$ret.="<p style='font-size:25px;font-family: serif;' >Dnevni zadatak za $i. razred</p><a style='font-size:40px;' class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a><br>";
+							$ret.="<p style='font-size:25px;font-family: serif;' >Dnevni zadatak za $i. razred</p><a style='font-size:40px;' class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a><br>";
 						}
 					}
 					$conn->close();
@@ -347,7 +347,7 @@
 						$sql="select * from zadaci where razred='$i' and br='2' order by datum desc limit 1";
 						$rez=$conn->query($sql);
 						while($row=$rez->fetch_assoc()){
-							$ret.="<p style='font-size:25px;font-family: serif;' >Tjedni zadatak za $i. razred</p><a style='font-size:40px;' class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a><br>";
+							$ret.="<p style='font-size:25px;font-family: serif;' >Tjedni zadatak za $i. razred</p><a style='font-size:40px;' class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a><br>";
 						}
 					}
 					$conn->close();
@@ -376,7 +376,7 @@
 						$rez=$conn->query($sql);
 						$ret="";
 						while($row=$rez->fetch_assoc()){
-							$ret.="<p class='dan'>".$row["dan"]."  <a class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
+							$ret.="<p class='dan'>".$row["dan"]."  <a class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
 						}
 						$conn->close();
 						
@@ -497,7 +497,7 @@
 							}
 							else{
 								while($row=$rez->fetch_assoc()){
-									$ret.="<br><a class='grupa' href='http://34.121.205.40/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>Izazovi:";
+									$ret.="<br><a class='grupa' href='http://localhost/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>Izazovi:";
 									$sql="select ime,id from izazovi where trajanje='1' and idgrupe=".$row["id"];
 									$rez2=$conn->query($sql);
 									if($rez2->num_rows===0){
@@ -505,7 +505,7 @@
 									}
 									else{
 										while($row2=$rez2->fetch_assoc()){
-											$ret.="<br><a class='izazov' href='http://34.121.205.40/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a>";
+											$ret.="<br><a class='izazov' href='http://localhost/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a>";
 											$ret.="<form style='display:inline;' method='post' action='zaustaviIzazov.php' ><input type='hidden' name='id' value=".$row2["id"]."><input style='border: 1px solid red;background-color: red;' type='submit' value='Zaustavi'></form>";
 											$ret.="<form style='display:inline;' method='post' action='obrisiIzazov.php' ><input type='hidden' name='id' value=".$row2["id"]."><input type='submit' value='Obriši'></form>";
 										}
@@ -516,7 +516,7 @@
 									if($rez2->num_rows!=0){
 										$ret.="<br>Završeni izazovi:";
 										while($row2=$rez2->fetch_assoc()){
-											$ret.="<br><a class='izazov' href='http://34.121.205.40/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a>";
+											$ret.="<br><a class='izazov' href='http://localhost/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a>";
 											$ret.="<form style='display:inline;' method='post' action='zaustaviIzazov.php' ><input type='hidden' name='id' value=".$row2["id"]."><input style='border: 1px solid green;background-color: green;' type='submit' value='Pokreni'></form>";
 											$ret.="<form style='display:inline;' method='post' action='obrisiIzazov.php' ><input type='hidden' name='id' value=".$row2["id"]."><input type='submit' value='Obriši'></form>";
 										}
@@ -532,7 +532,7 @@
 							}
 							else{
 								while($row=$rez->fetch_assoc()){
-									$ret.="<br><a class='grupa' href='http://34.121.205.40/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>Izazovi:";
+									$ret.="<br><a class='grupa' href='http://localhost/Grupa.php?id=".$row["id"]."'>".$row['ime']."</a><br>Izazovi:";
 									$sql="select ime,id from izazovi where trajanje='1' and idgrupe=".$row["id"];
 									$rez2=$conn->query($sql);
 									if($rez2->num_rows===0){
@@ -540,7 +540,7 @@
 									}
 									else{
 										while($row2=$rez2->fetch_assoc()){
-											$ret.="<br><a class='izazov' href='http://34.121.205.40/izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a>";
+											$ret.="<br><a class='izazov' href='http://localhost/izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a>";
 										}
 									}
 									$sql="select ime,id from izazovi where trajanje='0' and idgrupe=".$row["id"];
@@ -548,7 +548,7 @@
 									if($rez2->num_rows!=0){
 										$ret.="<br>Završeni izazovi:";
 										while($row2=$rez2->fetch_assoc()){
-											$ret.="<br><a class='izazov' href='http://34.121.205.40/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a>";
+											$ret.="<br><a class='izazov' href='http://localhost/Izazov.php?id=".$row2["id"]."'>".$row2['ime']."</a>";
 										}
 									}
 								}
@@ -577,7 +577,7 @@
 						$rez=$conn->query($sql);
 						$ret="";
 						while($row=$rez->fetch_assoc()){
-							$ret.="<a class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
+							$ret.="<a class='zadatak' href='http://localhost/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
 						}
 						$conn->close();
 						
@@ -629,7 +629,7 @@
 					$rez=$conn->query($sql);
 					echo "document.getElementById('zadaciArhiva$razred').innerHTML+='<div style=\"display:none;\" id=\"$podrucje\"></div>';";
 					while($row=$rez->fetch_assoc()){
-						echo "document.getElementById('$podrucje').innerHTML+='<a class=\"zadatak\" href=\"http://34.121.205.40/Zadatak.php?id=".$row["id"]."\">".$row["ime"]."</a><br>';";
+						echo "document.getElementById('$podrucje').innerHTML+='<a class=\"zadatak\" href=\"http://localhost/Zadatak.php?id=".$row["id"]."\">".$row["ime"]."</a><br>';";
 					}
 			}
 		?>

@@ -6,7 +6,7 @@
 		$sql="select * from dvoboj where id='".$_GET["id"]."' and idkorisnik2='".$_SESSION["userId"]."' and vrijeme2=''";
 		$rez=$conn->query($sql);
 		if($rez->num_rows==0){
-			header("Location: http://34.121.205.40/Main.php");
+			header("Location: http://localhost/Main.php");
 			die();
 		}
 		else{
@@ -16,11 +16,11 @@
 			smanjiZivote();
 			$_SESSION["postignuce"]=1;
 			$_SESSION["vrsta"]="dvoboj";
-			header("Location: http://34.121.205.40/igra.php");
+			header("Location: http://localhost/igra.php");
 			die();
 		}
 	}
-	header("Location: http://34.121.205.40/Main.php");
+	header("Location: http://localhost/Main.php");
 	die();
 
 	function smanjiZivote(){

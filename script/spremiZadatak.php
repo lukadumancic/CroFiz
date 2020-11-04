@@ -66,5 +66,5 @@
 	}
 ?>
 <script>
-	window.location="http://34.121.205.40/Izazov.php?id=<?php echo $_POST["idGL"]; ?>";
+	window.location="http://localhost/Izazov.php?id=<?php echo $_POST["idGL"]; ?>";
 </script>

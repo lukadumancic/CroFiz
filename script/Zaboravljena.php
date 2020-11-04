@@ -18,7 +18,7 @@ include "session.php";
 				else{
 					$_SESSION['poruka']="Greška";
 				}
-				header("Location: http://34.121.205.40/Main.php");
+				header("Location: http://localhost/Main.php");
 				die();
 				
 			?>
