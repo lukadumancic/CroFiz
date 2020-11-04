@@ -30,7 +30,7 @@
 
 			$conn->close();
 			if(prijavljen()=="True"){
-				$_SESSION["userId"]=idGet($_SESSION["korisnickoIme"]);
+				$_SESSION["userId"]=getId($_SESSION["korisnickoIme"]);
 			}
 		}
 
