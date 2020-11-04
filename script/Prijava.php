@@ -27,7 +27,7 @@
 					}
 				}
 			?>";
-			window.location="http://34.121.205.40/Main.php?msg="+a;
+			window.location="http://crofiz.com/Main.php?msg="+a;
 		</script>
 		
 		

@@ -6,7 +6,7 @@
 
 <?php 
 	if(prijavljen()=="False"){
-		header("Location: http://34.121.205.40/Main.php");
+		header("Location: http://crofiz.com/Main.php");
 		die();
 	}
 ?>
@@ -24,7 +24,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://34.121.205.40/Zadaci.php') {
+			if ($(this).prop('href') == 'http://crofiz.com/Zadaci.php') {
 			  $(this).addClass('current');
 			}
 		  });

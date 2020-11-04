@@ -20,7 +20,7 @@
 		}
 		$conn->close();
 	}
-	header("Location: http://34.121.205.40/Zadaci.php?br=Mentorski");
+	header("Location: http://crofiz.com/Zadaci.php?br=Mentorski");
 	die();
 	
 	

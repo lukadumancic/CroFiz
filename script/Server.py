@@ -113,7 +113,7 @@ Subject: CroFiz Aktivacija racuna
 
 
 Kako biste aktivirali svoj racun kliknite na sljedecu stranicu:<br>
-<ul>http://34.121.205.40/AktivacijaKoda.php?kod={}</ul>
+<ul>http://crofiz.com/AktivacijaKoda.php?kod={}</ul>
 
 """.format("crofiz.webteam@gmail.com",email,kod)
             

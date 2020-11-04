@@ -23,7 +23,7 @@
 			}
 			?>";
 			if (a=="1"){
-				window.location = 'http://34.121.205.40/Main.php';
+				window.location = 'http://crofiz.com/Main.php';
 		
 			}
 		</script>
@@ -37,7 +37,7 @@
 		
 		<script>
 			function vratiNaNaslovnu(){
-				window.location = 'http://34.121.205.40/Naslovna.php';
+				window.location = 'http://crofiz.com/Naslovna.php';
 			}
 		</script>
 		
@@ -75,7 +75,7 @@
 					$row=$rezultat->fetch_assoc();
 					//Ako je slika
 					if(strpos($row["type"],"mage")){
-						echo "<textarea class='slika' style='background-image:url(http://34.121.205.40/Slike/".$_POST["id"].".jpg);' ></textarea>";
+						echo "<textarea class='slika' style='background-image:url(http://crofiz.com/Slike/".$_POST["id"].".jpg);' ></textarea>";
 					}
 					else if(strpos($row["type"],"/pdf")){
 						echo "1";
@@ -89,10 +89,10 @@
 				document.getElementById("prikaz").innerHTML=a;
 			}
 			else if(a=="1"){
-				window.open("http://34.121.205.40/Dokumenti/<?php if(isset($_POST["id"])){echo $_POST["id"];} ?>.pdf");
+				window.open("http://crofiz.com/Dokumenti/<?php if(isset($_POST["id"])){echo $_POST["id"];} ?>.pdf");
 			}
 			else{
-				window.open("http://34.121.205.40/Dokumenti/<?php if(isset($_POST["id"])){echo $_POST["id"];} ?>.docx");
+				window.open("http://crofiz.com/Dokumenti/<?php if(isset($_POST["id"])){echo $_POST["id"];} ?>.docx");
 			}
 			
 			//Ispis svih skripti Mentora

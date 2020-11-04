@@ -85,7 +85,7 @@
 					return 'Slike/Korisnik'.$id.'.jpg';
 			}
 			function slikaGrupa($id){
-				return "<a href='http://34.121.205.40/Grupa.php?id=".$id."'><img src='Slike/Grupa$id.jpg' class='krugSlika' style='width: 100px;height: 100px;margin-top: 0px;align-self: center;padding: 30%;padding-top:10px;padding-bottom: 0px;'></a>";
+				return "<a href='http://crofiz.com/Grupa.php?id=".$id."'><img src='Slike/Grupa$id.jpg' class='krugSlika' style='width: 100px;height: 100px;margin-top: 0px;align-self: center;padding: 30%;padding-top:10px;padding-bottom: 0px;'></a>";
 			}
 			function rijesenostZadatka($id){
 				$conn=conn();

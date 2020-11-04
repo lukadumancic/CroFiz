@@ -18,7 +18,7 @@
 	}
 	
 	
-	header("Location: http://34.121.205.40/SlanjeZadataka.php");
+	header("Location: http://crofiz.com/SlanjeZadataka.php");
 	die();
 
 

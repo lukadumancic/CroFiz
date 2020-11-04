@@ -89,8 +89,8 @@
 							echo "<div class='dodaci'>";
 							echo "<div style='display: inline;' onmouseover='prikaziDodatak()' class='nick2'>".mojaSlika()."</div>";
 							echo "<div id='dodatak' style='display:none;' onmouseleave='sakrijDodatak()'>";
-							echo "<a href='http://34.121.205.40/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".mojaSlika()."</a><br>";
-							echo "<a href='http://34.121.205.40/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".getName($_SESSION["userId"])." ".getSurName($_SESSION["userId"])."</a>";
+							echo "<a href='http://crofiz.com/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".mojaSlika()."</a><br>";
+							echo "<a href='http://crofiz.com/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".getName($_SESSION["userId"])." ".getSurName($_SESSION["userId"])."</a>";
 							echo "<br>".cp()." <img src='Slicice/cp.png' style='width:15px;height:15px;'>";
 							echo '<a style="display: inherit;" href="Leveli.php"><div class="levelanje">
 								<div class="prikazLevela">'.level1($_SESSION["userId"]).'</div><br>

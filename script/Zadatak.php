@@ -6,11 +6,11 @@
 
 <?php 
 	if(!isset($_GET['id'])){
-		header("Location: http://34.121.205.40/Zadaci.php");
+		header("Location: http://crofiz.com/Zadaci.php");
 		die();
 	}
 	else if(!postoji()){
-		header("Location: http://34.121.205.40/Zadaci.php");
+		header("Location: http://crofiz.com/Zadaci.php");
 		die();
 	}
 ?>
@@ -30,7 +30,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://34.121.205.40/Zadaci.php') {
+			if ($(this).prop('href') == 'http://crofiz.com/Zadaci.php') {
 			  $(this).addClass('current');
 			}
 		  });

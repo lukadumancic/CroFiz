@@ -16,7 +16,7 @@
 				//Dodatak navigaciji
 				$(function(){
 			  $('a').each(function() {
-				if ($(this).prop('href') == 'http://34.121.205.40/Ucenje.php') {
+				if ($(this).prop('href') == 'http://crofiz.com/Ucenje.php') {
 				  $(this).addClass('current');
 				}
 			  });

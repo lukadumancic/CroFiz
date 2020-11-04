@@ -6,7 +6,7 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://34.121.205.40/Main.php");
+		header("Location: http://crofiz.com/Main.php");
 		die();
 	}
 ?>

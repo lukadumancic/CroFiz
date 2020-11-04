@@ -114,17 +114,17 @@ var custom_date_formats = {
 				</header>
 				<nav>
 					<div id="nav">
-						<a class='main' href='http://34.121.205.40/Connectihno.php'>Chat</a>
+						<a class='main' href='http://crofiz.com/Connectihno.php'>Chat</a>
 						<?php if(!loged())echo"<p style='font-size:25px;display:inline;'>/</p>
-						<a class='reg' href='http://34.121.205.40/Registration.php'>Register</a>
+						<a class='reg' href='http://crofiz.com/Registration.php'>Register</a>
 						<p style='font-size:25px;display:inline;'>/</p>
-						<a class='log' href='http://34.121.205.40/LogIn.php'>LogIn</a>";
+						<a class='log' href='http://crofiz.com/LogIn.php'>LogIn</a>";
 						else{
 							echo "
 							<p style='font-size:25px;display:inline;'>/</p>
-							<a class='main' href='http://34.121.205.40/Profile.php'>Profile</a>
+							<a class='main' href='http://crofiz.com/Profile.php'>Profile</a>
 							<p style='font-size:25px;display:inline;'>/</p>
-							<a class='main' style='color:red;' href='http://34.121.205.40/LogOut.php'>LogOut</a>";
+							<a class='main' style='color:red;' href='http://crofiz.com/LogOut.php'>LogOut</a>";
 						}?>
 
 					</div>
@@ -139,7 +139,7 @@ var custom_date_formats = {
 					  var commands = {
 						'go to *term':function(term){
 							if(term=='chat'){term='Connectihno';}
-							window.location='http://34.121.205.40/'+term+'.php'
+							window.location='http://crofiz.com/'+term+'.php'
 						}
 					  };
 					  annyang.addCommands(commands);

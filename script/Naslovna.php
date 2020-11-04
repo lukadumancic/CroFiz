@@ -6,7 +6,7 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://34.121.205.40/Main.php");
+		header("Location: http://crofiz.com/Main.php");
 		die();
 	}
 ?>
@@ -76,7 +76,7 @@
 					dodajObjave();
 					
 					function profil(nick){
-						window.location="http://34.121.205.40/Profil.php?nick="+nick;
+						window.location="http://crofiz.com/Profil.php?nick="+nick;
 					}
 					window.onscroll = function(ev) {
 						if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {

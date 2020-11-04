@@ -13,7 +13,7 @@
 				while($row=$rez->fetch_assoc()){
 					$ret.="<div>";
 					$ret.="<strong class='tamnije'>".brojObjava($row["id"])."</strong>  ";
-					$ret.="<a class='tema' href='http://34.121.205.40/Tema.php?id=".$row['id']."' >".$row["ime"]."</a> ";
+					$ret.="<a class='tema' href='http://crofiz.com/Tema.php?id=".$row['id']."' >".$row["ime"]."</a> ";
 					$ret.="<div class='temaMaliInfo'>";
 					$ret.=obradiDatum($row["datum"]);
 					$ret.="</div>";

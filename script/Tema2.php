@@ -5,11 +5,11 @@
 
 <?php
 	if(!isset($_GET["id"])){
-		header("Location: http://34.121.205.40/Forum.php");
+		header("Location: http://crofiz.com/Forum.php");
 		die();
 	}
 	else if($_GET["id"]==""){
-		header("Location: http://34.121.205.40/Forum.php");
+		header("Location: http://crofiz.com/Forum.php");
 		die();
 	}
 ?>
@@ -31,7 +31,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://34.121.205.40/Forum.php') {
+			if ($(this).prop('href') == 'http://crofiz.com/Forum.php') {
 			  $(this).addClass('current');
 			}
 		  });
@@ -123,7 +123,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick3 tamnije' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
+				return "<a class='nick3 tamnije' href='http://crofiz.com/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
 				
 			}
 			function infoKorisnik($id){
@@ -134,7 +134,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick3' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
+				return "<a class='nick3' href='http://crofiz.com/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
 				
 			}
 			

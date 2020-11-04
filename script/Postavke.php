@@ -6,7 +6,7 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://34.121.205.40/Main.php");
+		header("Location: http://crofiz.com/Main.php");
 		die();
 	}
 ?>
@@ -141,7 +141,7 @@
 				});
 			</script>
 			
-			<!-- <a href='http://34.121.205.40/PromjenaLozinke.php' title='Promjena lozinke'><img src='Slicice/pass.png' style='width:75px;height:75px;' ></a> -->
+			<!-- <a href='http://crofiz.com/PromjenaLozinke.php' title='Promjena lozinke'><img src='Slicice/pass.png' style='width:75px;height:75px;' ></a> -->
 		
 			
 		</article>

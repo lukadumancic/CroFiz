@@ -6,7 +6,7 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://34.121.205.40/Main.php");
+		header("Location: http://crofiz.com/Main.php");
 		die();
 	}
 ?>
@@ -89,7 +89,7 @@
 					if($rezultat->num_rows>0){
 						while($row=$rezultat->fetch_assoc()){
 							$br=1;
-							echo "<p><a class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
+							echo "<p><a class='zadatak' href='http://crofiz.com/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
 						}
 					}
 					if($br==0){
@@ -111,7 +111,7 @@
 					if($rezultat->num_rows>0){
 						while($row=$rezultat->fetch_assoc()){
 							$br=1;
-							echo "<p><a class='zadatak' href='http://34.121.205.40/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
+							echo "<p><a class='zadatak' href='http://crofiz.com/Zadatak.php?id=".$row["id"]."'>".$row["ime"]."</a></p>";
 						}
 					}
 					if($br==0){
@@ -145,7 +145,7 @@
 				$rezultat=$conn->query($sql);
 				$row=$rezultat->fetch_assoc();
 				$conn->close();
-				return "<a class='nick3' href='http://34.121.205.40/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
+				return "<a class='nick3' href='http://crofiz.com/Profil.php?nick=".$row["nick"]."'>".slika($id).$row["ime"]." ".$row["prezime"]." ".levelSlika($id)."</a>";
 				
 			}
 		?>

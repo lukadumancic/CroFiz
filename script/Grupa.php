@@ -6,12 +6,12 @@
 
 <?php
 	if(prijavljen()=="False"){
-		header("Location: http://34.121.205.40/Main.php");
+		header("Location: http://crofiz.com/Main.php");
 		die();
 	}
 	if(prijavljen()=="True"){
 		if(!mojaGrupa()){
-			header("Location: http://34.121.205.40/Grupe.php");
+			header("Location: http://crofiz.com/Grupe.php");
 			die();
 		}
 	}
@@ -29,7 +29,7 @@
 			//Dodatak navigaciji
 			$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == 'http://34.121.205.40/Grupe.php') {
+			if ($(this).prop('href') == 'http://crofiz.com/Grupe.php') {
 			  $(this).addClass('current');
 			}
 		  });
@@ -110,7 +110,7 @@
 					dodajObjave();
 					
 					function profil(nick){
-						window.location="http://34.121.205.40/Profil.php?nick="+nick;
+						window.location="http://crofiz.com/Profil.php?nick="+nick;
 					}
 					window.onscroll = function(ev) {
 						if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {

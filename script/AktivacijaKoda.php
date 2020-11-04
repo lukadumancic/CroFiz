@@ -41,7 +41,7 @@
 			
 				else{
 				}
-				header("Location: http://34.121.205.40/Postignuca.php");
+				header("Location: http://crofiz.com/Postignuca.php");
 				die();
 			?>
 		
