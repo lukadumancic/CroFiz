@@ -92,6 +92,12 @@
 					<strong>CroFiz</strong> je web stranica namjenjena učenicima, profesorima i svim fizičarima u njihovoj potrazi za znanjem!
 				</div>
 				
+				<div>
+					<strong>CroFiz</strong> is a personal project from 2015 <a href="https://github.com/lukadumancic">Luka Dumančić</a>
+					<br/>
+					<iframe src="https://drive.google.com/file/d/0B89nzkfD9yGPY1lPWmpXNl80Tjg/preview" width="640" height="480"></iframe>
+				</div>
+				
 				<div style='text-align: -webkit-center;'>
 					<div class='paralelna3' style="background: url('Slicice/learning.jpeg');background-size: cover;">
 						<p><a href="Ucenje.php">Učenje</a></p>
