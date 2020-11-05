@@ -93,7 +93,7 @@
 				</div>
 				
 				<div>
-					<strong>CroFiz</strong> is a personal project from 2015 <a href="https://github.com/lukadumancic">Luka Dumančić</a>
+					<strong>CroFiz</strong> is a personal project from 2015 <a style="color: black" href="https://github.com/lukadumancic">Luka Dumančić</a>
 					<br/>
 					<iframe src="https://drive.google.com/file/d/0B89nzkfD9yGPY1lPWmpXNl80Tjg/preview" width="640" height="480"></iframe>
 				</div>
