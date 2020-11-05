@@ -2,7 +2,7 @@
 		
 		<div id="navigacija" class="navigacija">
 			<header>
-				<div class='crofiz'><a href="http://34.121.205.40">CROFIZ</a></div>
+				<div class='crofiz'><a href="http://crofiz.com">CROFIZ</a></div>
 			</header>
 			<nav>
 				<div id="nav" >
@@ -168,7 +168,7 @@
 		//css-> a.current
 		$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == '<?php echo 'http://34.121.205.40'.substr($_SERVER['REQUEST_URI'],0,strpos($_SERVER['REQUEST_URI'],".php")+4) ?>') {
+			if ($(this).prop('href') == '<?php echo 'http://crofiz.com'.substr($_SERVER['REQUEST_URI'],0,strpos($_SERVER['REQUEST_URI'],".php")+4) ?>') {
 			  $(this).addClass('current');
 			}
 		  });
@@ -183,8 +183,8 @@
 					echo '
 					brojObavijesti();
 					brojPoruka();
-					window.setInterval(brojObavijesti, 2000);
-					window.setInterval(brojPoruka, 2000);';
+					window.setInterval(brojObavijesti, 10000);
+					window.setInterval(brojPoruka, 10000);';
 				}
 			?>
 		

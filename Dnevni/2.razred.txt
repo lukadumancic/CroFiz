@@ -1,5 +1,5 @@
-Ime:Pomicanje naboja iz toèke u toèku
-Tekst:Toèka K ima elektrièni potencijal 900 V, a toèka L ima elektrièni potencijal 1800 V. Koliki rad treba obaviti pri pomicanju naboja 2 mikro kulona iz K u L?
+Ime:Pomicanje naboja iz tocke u toï¿½ku
+Tekst:Tocka K ima elektricni potencijal 900 V, a tocka L ima elektricni potencijal 1800 V. Koliki rad treba obaviti pri pomicanju naboja 2 mikro kulona iz K u L?
 Rjesenje:1,8
 Jedinica:mJ
 Podrucje:Elektrostatika

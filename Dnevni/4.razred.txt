@@ -1,5 +1,5 @@
 Ime:Blizanci
-Tekst:Jedan od blizanaca za svoj dvadeseti roðendan otputuje svemirskim brodom brzinom 0,6c. Brat na Zemlji slavi pedeseti roðendan. Koji roðendan slavi blizanac "putnik"?
+Tekst:Jedan od blizanaca za svoj dvadeseti rocendan otputuje svemirskim brodom brzinom 0,6c. Brat na Zemlji slavi pedeseti rodendan. Koji rodendan slavi blizanac "putnik"?
 Rjesenje:44
 Jedinica:godina
 Podrucje:Teorija relativnosti

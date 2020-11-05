@@ -1,5 +1,5 @@
 Ime:Visina dosega strelice
-Tekst:Strelica izbaèena lukom vertikalno uvis vraæa se 6 sekunda nakon izbaèaja. Koju je najveæu visinu dosegla strelica zanemarimo li silu otpora zraka? 
+Tekst:Strelica izbacena lukom vertikalno uvis vraca se 6 sekunda nakon izbacaja. Koju je najvecu visinu dosegla strelica zanemarimo li silu otpora zraka? 
 Rjesenje:45
 Jedinica:m
 Podrucje:Sila i gibanje

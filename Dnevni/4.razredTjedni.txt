@@ -1,8 +1,0 @@
-Ime:Žarišna daljina leæe
-Tekst:Za predmet postavljen na optièku os pred sabirnom leæom, velièina realne slike dvostruko je veæa od velièine predmeta. Kad se taj predmet pomakne za 9cm duž optièke osi, velièina njegove slike postaje upola manja od velièine predmeta. Odredi žarišnu daljinu ove leæe!
-Rjesenje:6
-Jedinica:cm
-Podrucje:Optika
-Br:2
-Slika:0
-Dan:Nedjelja

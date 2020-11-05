@@ -1,8 +1,0 @@
-Ime:Jakost magnetskog polja
-Tekst:Metalna šipka mase 0.2 kg kojom teèe elektrièna struja 10 A klizi na dvije horizontalne traènice koje su meðusobno udaljene 0.5 m. Izraèunajte jakost vertikalnog magnetskog polja koje je potrebno da bi se šipka gibala konstantnom brzinom ukoliko je koeficijent dinamièkog trenja izmeðu šipke i traènice 0.1. (zaokruži na 1 decimalu)
-Rjesenje:39.2
-Jedinica:mT
-Podrucje:Magnetizam
-Br:2
-Slika:0
-Dan:Nedjelja

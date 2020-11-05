@@ -43,7 +43,7 @@
 			</script>
 			<div id="objave">
 				<script>
-					var x=<?php echo brojObjava(); ?>+56;
+					var x=<?php echo brojObjava(); ?>+10;
 					function dodajObjave()
 					{
 						x-=10;

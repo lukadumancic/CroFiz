@@ -1,8 +1,0 @@
-Ime:Udaljenost brodova
-Tekst:Dva broda stoje usidrena na sredini ravne, duge rijeke. Jedan se brod poène gibati paralelno s tokom rijeke u jednom smjeru, a drugi, istovremeno,u suprotnom smjeru. Ako su brzine brodova u odnosu na vodu 3m/s, a brzina toka rijeke je 1 m/s, kolika je udaljenost brodova nakon 5s?
-Rjesenje:10
-Jedinica:m
-Podrucje:Složena gibanja
-Br:2
-Slika:0
-Dan:Nedjelja

@@ -1,0 +1,8 @@
+Ime:Jakost magnetskog polja
+Tekst:Metalna sipka mase 0.2 kg kojom tece elektricna struja 10 A klizi na dvije horizontalne tracnice koje su medusobno udaljene 0.5 m. Izracunajte jakost vertikalnog magnetskog polja koje je potrebno da bi se sipka gibala konstantnom brzinom ukoliko je koeficijent dinamickog trenja izmedu sipke i tracnice 0.1. (zaokruzi na 1 decimalu)
+Rjesenje:39.2
+Jedinica:mT
+Podrucje:Magnetizam
+Br:2
+Slika:0
+Dan:Nedjelja

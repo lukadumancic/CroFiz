@@ -48,43 +48,44 @@ while True:
         ##if(brZadaci>0):
           ##  brZadaci-=1
         #Dnevni zadaci i tjedni
-        '''if brZadaci==0 and ctime().split()[3].split(":")[0]=="12" and ctime().split()[3].split(":")[1]=="00":
+        if brZadaci==0 and ctime().split()[3].split(":")[0]=="12" and ctime().split()[3].split(":")[1]=="00":
             brZadaci=10000
             cursor = conn.cursor(buffered=True)
             print("Dnevni zadaci")
             for i in range(1,5):
                 f=open("Dnevni/"+str(i)+".razred.txt","r")
                 l=f.readlines()
-                ime=l[0][4:len(l[0])-1]
-                tekst=l[1][6:len(l[1])-1]
-                rjesenje=l[2][9:len(l[2])-1]
-                jedinica=l[3][9:len(l[3])-1]
-                podrucje=l[4][9:len(l[4])-1]
-                br=l[5][3:len(l[5])-1]
-                slika=l[6][6:len(l[6])-1]
-                dan=l[7][4:]
+                ime=l[0][4:len(l[0])-1].replace('\r', '')
+                tekst=l[1][6:len(l[1])-1].replace('\r', '')
+                rjesenje=l[2][9:len(l[2])-1].replace('\r', '')
+                jedinica=l[3][9:len(l[3])-1].replace('\r', '')
+                podrucje=l[4][9:len(l[4])-1].replace('\r', '')
+                br=l[5][3:len(l[5])-1].replace('\r', '')
+                slika=l[6][6:len(l[6])-1].replace('\r', '')
+                dan=l[7][4:].replace('\r', '')
                 print(ime,tekst,rjesenje,jedinica,podrucje,br,slika,dan)
+                print "INSERT INTO zadaci (`ime`, `tekst`, `rjesenje`, `jedinica`, `razred`, `podrucje`, `br`, `slika`, `dan`) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')".format(ime,tekst,rjesenje,jedinica,str(i),podrucje,br,slika,dan)
                 cursor.execute("INSERT INTO zadaci (`ime`, `tekst`, `rjesenje`, `jedinica`, `razred`, `podrucje`, `br`, `slika`, `dan`) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')".format(ime,tekst,rjesenje,jedinica,str(i),podrucje,br,slika,dan))
             cursor.execute("INSERT INTO `crofiz`.`objave` (`objava`, `idkorisnik`,`br`) VALUES ('Dnevni zadaci su spremni! Mozes li rijesiti danasnji problem?', '35', '0')")
-                
+            conn.commit()
             if datetime.datetime.today().weekday()==5:
                 print("Tjedni zadaci")
                 for i in range(1,5):
-                    f=open("Tjedni/"+str(i)+".razred.txt","r")
+                    f=open("Tjedni/"+str(i)+".razredTjedni.txt","r")
                     l=f.readlines()
-                    ime=l[0][4:len(l[0])-1]
-                    tekst=l[1][6:len(l[1])-1]
-                    rjesenje=l[2][9:len(l[2])-1]
-                    jedinica=l[3][9:len(l[3])-1]
-                    podrucje=l[4][9:len(l[4])-1]
-                    br=l[5][3:len(l[5])-1]
-                    slika=l[6][6:len(l[6])-1]
-                    dan=l[7][4:]
+                    ime=l[0][4:len(l[0])-1].replace('\r', '')
+                    tekst=l[1][6:len(l[1])-1].replace('\r', '')
+                    rjesenje=l[2][9:len(l[2])-1].replace('\r', '')
+                    jedinica=l[3][9:len(l[3])-1].replace('\r', '')
+                    podrucje=l[4][9:len(l[4])-1].replace('\r', '')
+                    br=l[5][3:len(l[5])-1].replace('\r', '')
+                    slika=l[6][6:len(l[6])-1].replace('\r', '')
+                    dan=l[7][4:].replace('\r', '')
                     print(ime,tekst,rjesenje,jedinica,podrucje,br,slika,dan)
                     cursor.execute("INSERT INTO zadaci (`ime`, `tekst`, `rjesenje`, `jedinica`, `razred`, `podrucje`, `br`, `slika`, `dan`) VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')".format(ime,tekst,rjesenje,jedinica,str(i),podrucje,br,slika,dan))
                 
-                
-            cursor.close()'''
+            conn.commit()
+            cursor.close()
             
 
 
@@ -305,9 +306,9 @@ Podaci za prijavu su:<br>
         cursor8.execute("select id,slika from korisnici where slika is null and (br='0' or br is null)")
         for (id,slika) in cursor8:
             print("Bezslikni ",id)
-            with open("Slike\\acc.jpg", "rb") as f:
+            with open("Slike/acc.jpg", "rb") as f:
                 es = base64.b64encode(f.read())
-            file=open("Slike\\Korisnik"+str(id)+".jpg","wb")
+            file=open("Slike/Korisnik"+str(id)+".jpg","wb")
             file.write(es.decode('base64'))
             file.close()
             f.close()

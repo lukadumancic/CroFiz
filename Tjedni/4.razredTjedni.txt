@@ -1,0 +1,8 @@
+Ime:Zarisna daljina lece
+Tekst:Za predmet postavljen na opticku os pred sabirnom lecom, velicina realne slike dvostruko je veca od velicine predmeta. Kad se taj predmet pomakne za 9cm duz opticke osi, velicina njegove slike postaje upola manja od velicine predmeta. Odredi zarisnu daljinu ove lece!
+Rjesenje:6
+Jedinica:cm
+Podrucje:Optika
+Br:2
+Slika:0
+Dan:Nedjelja

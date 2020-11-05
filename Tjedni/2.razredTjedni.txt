@@ -1,0 +1,8 @@
+Ime:Povecanje temperature cavla
+Tekst:Prilikom zabijanja cavla cekicem u dasku, cavlu se povecava temperatura. Pretpostavite da se 40 % kineticke energije koju cavlic primi udaranjem cekica pretvori u toplinu koja se zadrci u cavlu (nema izmjene topline s okolinom). Izra�unajte za koliko se poveca temperatura aluminijskog cavla nakon deset udaraca cekicem. Masa cavla je 8 g, masa cekica je 1.8 kg. Brzina kojom cekic udara cavao je 7.8 m/s. Specificni toplinski kapacitet aluminija je 910 J/(kgK). ( rjecenje je prirodan broj)
+Rjesenje:30
+Jedinica:stupnjevi
+Podrucje:Toplina
+Br:2
+Slika:0
+Dan:Nedjelja
