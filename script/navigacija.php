@@ -26,13 +26,13 @@
 					</script>
 					
 					<div id="nav1">
-						<?php if(prijavljen()!=="True"){echo '<a class="navbutton" href="http://crofiz.com/Main.php">Početna</a>';} ?>
-						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://crofiz.com/Naslovna.php">Naslovna</a>';} ?>
-						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://crofiz.com/Profil.php">Profil</a>';} ?>
-						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://crofiz.com/Grupe.php">Grupe</a>';} ?>
-						<a class="navbutton" href='http://crofiz.com/Zadaci.php'>Zadaci</a>
-						<a class="navbutton" href='http://crofiz.com/Forum.php'>Forum</a>
-						<a class="navbutton" href='http://crofiz.com/Ucenje.php'>Učenje</a>
+						<?php if(prijavljen()!=="True"){echo '<a class="navbutton" href="http://34.121.205.40/Main.php">Početna</a>';} ?>
+						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://34.121.205.40/Naslovna.php">Naslovna</a>';} ?>
+						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://34.121.205.40/Profil.php">Profil</a>';} ?>
+						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://34.121.205.40/Grupe.php">Grupe</a>';} ?>
+						<a class="navbutton" href='http://34.121.205.40/Zadaci.php'>Zadaci</a>
+						<a class="navbutton" href='http://34.121.205.40/Forum.php'>Forum</a>
+						<a class="navbutton" href='http://34.121.205.40/Ucenje.php'>Učenje</a>
 						<div class='trazi'>
 							<?php if(prijavljen()==="True"){echo '<label for="tags"><img class="povecalo" src="Slicice/povecalo.png" onclick="prikaziTrazilicu()" ></label>';} ?>
 							<script>
@@ -89,8 +89,8 @@
 							echo "<div class='dodaci'>";
 							echo "<div style='display: inline;' onmouseover='prikaziDodatak()' class='nick2'>".mojaSlika()."</div>";
 							echo "<div id='dodatak' style='display:none;' onmouseleave='sakrijDodatak()'>";
-							echo "<a href='http://crofiz.com/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".mojaSlika()."</a><br>";
-							echo "<a href='http://crofiz.com/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".getName($_SESSION["userId"])." ".getSurName($_SESSION["userId"])."</a>";
+							echo "<a href='http://34.121.205.40/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".mojaSlika()."</a><br>";
+							echo "<a href='http://34.121.205.40/Profil.php?nick=".$_SESSION["korisnickoIme"]."'>".getName($_SESSION["userId"])." ".getSurName($_SESSION["userId"])."</a>";
 							echo "<br>".cp()." <img src='Slicice/cp.png' style='width:15px;height:15px;'>";
 							echo '<a style="display: inherit;" href="Leveli.php"><div class="levelanje">
 								<div class="prikazLevela">'.level1($_SESSION["userId"]).'</div><br>
@@ -168,7 +168,7 @@
 		//css-> a.current
 		$(function(){
 		  $('a').each(function() {
-			if ($(this).prop('href') == '<?php echo 'http://crofiz.com'.substr($_SERVER['REQUEST_URI'],0,strpos($_SERVER['REQUEST_URI'],".php")+4) ?>') {
+			if ($(this).prop('href') == '<?php echo 'http://34.121.205.40'.substr($_SERVER['REQUEST_URI'],0,strpos($_SERVER['REQUEST_URI'],".php")+4) ?>') {
 			  $(this).addClass('current');
 			}
 		  });
