@@ -26,13 +26,13 @@
 					</script>
 					
 					<div id="nav1">
-						<?php if(prijavljen()!=="True"){echo '<a class="navbutton" href="http://'. $_SESSION["host"].'/Main.php">Početna</a>';} ?>
-						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://'. $_SESSION["host"].'/Naslovna.php">Naslovna</a>';} ?>
-						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://'. $_SESSION["host"].'/Profil.php">Profil</a>';} ?>
-						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://'. $_SESSION["host"].'/Grupe.php">Grupe</a>';} ?>
-						<a class="navbutton" href='http://<?php echo $_SESSION["host"]?>/Zadaci.php'>Zadaci</a>
-						<a class="navbutton" href='http://<?php echo $_SESSION["host"]?>/Forum.php'>Forum</a>
-						<a class="navbutton" href='http://<?php echo $_SESSION["host"]?>/Ucenje.php'>Učenje</a>
+						<?php if(prijavljen()!=="True"){echo '<a class="navbutton" href="http://crofiz.com/Main.php">Početna</a>';} ?>
+						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://crofiz.com/Naslovna.php">Naslovna</a>';} ?>
+						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://crofiz.com/Profil.php">Profil</a>';} ?>
+						<?php if(prijavljen()==="True"){echo '<a class="navbutton" href="http://crofiz.com/Grupe.php">Grupe</a>';} ?>
+						<a class="navbutton" href='http://crofiz.com/Zadaci.php'>Zadaci</a>
+						<a class="navbutton" href='http://crofiz.com/Forum.php'>Forum</a>
+						<a class="navbutton" href='http://crofiz.com/Ucenje.php'>Učenje</a>
 						<div class='trazi'>
 							<?php if(prijavljen()==="True"){echo '<label for="tags"><img class="povecalo" src="Slicice/povecalo.png" onclick="prikaziTrazilicu()" ></label>';} ?>
 							<script>
